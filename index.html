@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanagaratnam Rajendra | Senior Branch Manager Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
+
+        :root {
+            --brand-navy: #0a192f;
+            --brand-gold: #c5a059;
+            --brand-accent: #112240;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--brand-navy) 0%, #112240 100%);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .section-padding {
+            padding: 80px 20px;
+        }
+
+        .skill-tag {
+            background: rgba(197, 160, 89, 0.1);
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <span class="serif-font text-2xl font-bold text-[#0a192f]">KR.</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-gray-700 hover:text-[#c5a059] px-3 py-2 font-medium">Home</a>
+                        <a href="#about" class="text-gray-700 hover:text-[#c5a059] px-3 py-2 font-medium">About</a>
+                        <a href="#experience" class="text-gray-700 hover:text-[#c5a059] px-3 py-2 font-medium">Experience</a>
+                        <a href="#skills" class="text-gray-700 hover:text-[#c5a059] px-3 py-2 font-medium">Expertise</a>
+                        <a href="#contact" class="bg-[#0a192f] text-white px-5 py-2 rounded-lg hover:bg-[#c5a059] transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 p-2">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 p-4">
+            <a href="#home" class="block py-2 text-gray-700">Home</a>
+            <a href="#about" class="block py-2 text-gray-700">About</a>
+            <a href="#experience" class="block py-2 text-gray-700">Experience</a>
+            <a href="#skills" class="block py-2 text-gray-700">Expertise</a>
+            <a href="#contact" class="block py-2 text-gray-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="serif-font text-4xl md:text-6xl font-bold mb-4">Kanagaratnam Rajendra</h1>
+                <p class="text-[#c5a059] text-xl md:text-2xl font-light mb-6">Senior Branch Manager | Seylan Bank PLC</p>
+                <p class="text-gray-300 text-lg mb-8 max-w-lg">
+                    A seasoned banking professional with extensive experience in retail banking, credit operations, and strategic leadership in Sri Lanka’s financial sector.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="px-8 py-3 bg-[#c5a059] text-white rounded-lg font-semibold hover:bg-[#b08d4a] transition-all text-center">Inquire for Opportunities</a>
+                    <a href="https://www.linkedin.com/in/kanagaratnam-rajendra-861494404/" target="_blank" class="px-8 py-3 border border-gray-400 text-white rounded-lg font-semibold hover:bg-white/10 transition-all text-center">
+                        <i class="fa-brands fa-linkedin mr-2"></i>LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-2xl border-4 border-[#c5a059] overflow-hidden shadow-2xl">
+                        <!-- Placeholder for professional photo -->
+                        <div class="w-full h-full bg-slate-800 flex items-center justify-center text-gray-500">
+                            <i class="fa-solid fa-user-tie text-8xl"></i>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl hidden md:block">
+                        <p class="text-[#0a192f] font-bold text-3xl">25+</p>
+                        <p class="text-gray-500 text-sm">Years of Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="serif-font text-3xl md:text-4xl font-bold text-[#0a192f] mb-6">Professional Profile</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        As a Senior Branch Manager at Seylan Bank, I have dedicated my career to driving financial excellence and operational efficiency. My journey in the Sri Lankan banking industry has been defined by a commitment to fostering long-term client relationships and mentoring high-performing teams.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-8">
+                        My expertise spans across Retail & Corporate Banking, Credit Risk Assessment, and Portfolio Management. I specialize in turning underperforming branches into profitable hubs through strategic planning and customer-centric service models.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 border-l-4 border-[#c5a059] bg-gray-50">
+                            <h4 class="font-bold text-[#0a192f]">Integrity</h4>
+                            <p class="text-sm text-gray-500">Unwavering ethical standards.</p>
+                        </div>
+                        <div class="p-4 border-l-4 border-[#c5a059] bg-gray-50">
+                            <h4 class="font-bold text-[#0a192f]">Leadership</h4>
+                            <p class="text-sm text-gray-500">Guided teams of 30+ staff.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-inner">
+                    <h3 class="serif-font text-2xl font-bold text-[#0a192f] mb-6">Core Competencies</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-semibold">Branch Operations & Management</span>
+                                <span class="text-sm font-semibold">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[#0a192f] h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-semibold">Credit Risk & Analysis</span>
+                                <span class="text-sm font-semibold">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[#0a192f] h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-semibold">Portfolio Growth</span>
+                                <span class="text-sm font-semibold">88%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[#0a192f] h-2 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-semibold">Compliance & Audit</span>
+                                <span class="text-sm font-semibold">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[#0a192f] h-2 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="section-padding bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="serif-font text-3xl md:text-4xl font-bold text-[#0a192f] mb-12 text-center">Career Milestones</h2>
+            
+            <div class="relative border-l-2 border-gray-200 ml-4 md:ml-0">
+                <!-- Seylan Bank - Current -->
+                <div class="mb-12 ml-8 relative">
+                    <div class="absolute -left-[41px] top-1 w-5 h-5 bg-[#c5a059] rounded-full border-4 border-white"></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 card-hover">
+                        <span class="text-sm font-bold text-[#c5a059] uppercase tracking-wider">Present</span>
+                        <h3 class="text-xl font-bold text-[#0a192f] mt-1">Senior Branch Manager</h3>
+                        <p class="text-gray-700 font-semibold">Seylan Bank PLC</p>
+                        <ul class="mt-4 space-y-2 text-gray-600 text-sm list-disc pl-4">
+                            <li>Directing overall branch operations, ensuring peak performance across all departments.</li>
+                            <li>Managing high-value corporate portfolios and individual wealth management.</li>
+                            <li>Overseeing risk management protocols and ensuring 100% compliance with Central Bank regulations.</li>
+                            <li>Mentoring staff to achieve KPIs and exceptional customer satisfaction ratings.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Previous Roles (Generic based on Seniority) -->
+                <div class="mb-12 ml-8 relative">
+                    <div class="absolute -left-[41px] top-1 w-5 h-5 bg-gray-300 rounded-full border-4 border-white"></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 card-hover">
+                        <span class="text-sm font-bold text-gray-400 uppercase tracking-wider">Previous Years</span>
+                        <h3 class="text-xl font-bold text-[#0a192f] mt-1">Branch Manager</h3>
+                        <p class="text-gray-700 font-semibold">Seylan Bank PLC</p>
+                        <p class="mt-4 text-gray-600 text-sm">
+                            Successfully managed various branch locations across the island, consistently exceeding annual deposit and lending targets.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mb-12 ml-8 relative">
+                    <div class="absolute -left-[41px] top-1 w-5 h-5 bg-gray-300 rounded-full border-4 border-white"></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 card-hover">
+                        <span class="text-sm font-bold text-gray-400 uppercase tracking-wider">Early Career</span>
+                        <h3 class="text-xl font-bold text-[#0a192f] mt-1">Assistant Manager / Credit Officer</h3>
+                        <p class="text-gray-700 font-semibold">Seylan Bank PLC</p>
+                        <p class="mt-4 text-gray-600 text-sm">
+                            Focused on credit appraisal, recoveries, and customer service excellence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills/Expertise -->
+    <section id="skills" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="serif-font text-3xl md:text-4xl font-bold text-[#0a192f] mb-12 text-center">Areas of Expertise</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center p-6 rounded-xl border border-gray-100 hover:border-[#c5a059] transition-all">
+                    <i class="fa-solid fa-chart-line text-4xl text-[#c5a059] mb-4"></i>
+                    <h4 class="font-bold">Strategic Planning</h4>
+                </div>
+                <div class="text-center p-6 rounded-xl border border-gray-100 hover:border-[#c5a059] transition-all">
+                    <i class="fa-solid fa-hand-holding-dollar text-4xl text-[#c5a059] mb-4"></i>
+                    <h4 class="font-bold">Credit Facilities</h4>
+                </div>
+                <div class="text-center p-6 rounded-xl border border-gray-100 hover:border-[#c5a059] transition-all">
+                    <i class="fa-solid fa-users-gear text-4xl text-[#c5a059] mb-4"></i>
+                    <h4 class="font-bold">Team Leadership</h4>
+                </div>
+                <div class="text-center p-6 rounded-xl border border-gray-100 hover:border-[#c5a059] transition-all">
+                    <i class="fa-solid fa-shield-halved text-4xl text-[#c5a059] mb-4"></i>
+                    <h4 class="font-bold">Risk Management</h4>
+                </div>
+            </div>
+
+            <div class="mt-12 flex flex-wrap justify-center gap-3">
+                <span class="skill-tag px-4 py-2 rounded-full text-sm font-semibold">Lending</span>
+                <span class="skill-tag px-4 py-2 rounded-full text-sm font-semibold">KYC/AML Compliance</span>
+                <span class="skill-tag px-4 py-2 rounded-full text-sm font-semibold">Recovery Management</span>
+                <span class="skill-tag px-4 py-2 rounded-full text-sm font-semibold">Operational Audit</span>
+                <span class="skill-tag px-4 py-2 rounded-full text-sm font-semibold">Public Relations</span>
+                <span class="skill-tag px-4 py-2 rounded-full text-sm font-semibold">Islamic Banking</span>
+                <span class="skill-tag px-4 py-2 rounded-full text-sm font-semibold">SME Financing</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-[#0a192f] rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <div class="md:w-1/3 p-12 text-white">
+                    <h2 class="serif-font text-3xl font-bold mb-6">Let's Connect</h2>
+                    <p class="text-gray-400 mb-8">Open for senior leadership roles, consultancy, or networking within the financial sector.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-[#112240] rounded-full flex items-center justify-center text-[#c5a059]">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <span>Contact via LinkedIn</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-[#112240] rounded-full flex items-center justify-center text-[#c5a059]">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <span>Sri Lanka</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <a href="https://www.linkedin.com/in/kanagaratnam-rajendra-861494404/" target="_blank" class="inline-flex items-center gap-2 text-[#c5a059] hover:underline font-bold">
+                            View Professional Profile <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-2/3 bg-white p-12">
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]/50 transition-all" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                                <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]/50 transition-all" placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]/50 transition-all" placeholder="Job Opportunity / Inquiry">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]/50 transition-all" placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#0a192f] text-white py-4 rounded-lg font-bold hover:bg-[#c5a059] transition-all">Send Message</button>
+                    </form>
+                    <div id="formSuccess" class="hidden mt-4 p-4 bg-green-50 text-green-700 rounded-lg text-center font-medium">
+                        Thank you! Your message has been sent successfully.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="serif-font text-2xl font-bold text-[#0a192f] mb-4">Kanagaratnam Rajendra</h2>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://www.linkedin.com/in/kanagaratnam-rajendra-861494404/" class="text-gray-400 hover:text-[#0a192f] transition-all text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="text-gray-400 hover:text-[#0a192f] transition-all text-xl"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2024 Professional Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Contact Form Handling
+        const form = document.getElementById('contactForm');
+        const success = document.getElementById('formSuccess');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            form.classList.add('hidden');
+            success.classList.remove('hidden');
+            
+            // Log form data simulation
+            console.log("Form Submitted Successfully");
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                menu.classList.add('hidden');
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
